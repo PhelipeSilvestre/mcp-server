@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-dotenv
+openai
+python-multipart
+python-telegram-bot
+requests
+httpx
