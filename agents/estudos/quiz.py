@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from agents.estudos.servico_openai import gerar_quiz_openai
+from agents.estudos.servico_gemini import gerar_quiz as gerar_quiz_gemini
 
 async def gerar_quiz(topico: str = None):
     """
@@ -16,7 +16,7 @@ async def gerar_quiz(topico: str = None):
         if not topico:
             topico = "conhecimentos gerais"
         
-        perguntas = await gerar_quiz_openai(topico)
+        perguntas = await gerar_quiz_gemini(topico)
         return {"quiz": perguntas}
     except Exception as e:
         return {"error": str(e)}

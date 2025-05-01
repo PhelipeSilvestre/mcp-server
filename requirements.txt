@@ -6,3 +6,4 @@ python-multipart
 python-telegram-bot
 requests
 httpx
+google-generativeai
